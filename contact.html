@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="icon" type="image" href="favicon.ico">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        :root {
+            --primary-red: #932233;
+            --dark-red: #361f22;
+        }
+
+        .bg-primary {
+            background-color: var(--primary-red);
+        }
+
+        .bg-dark {
+            background-color: var(--dark-red);
+        }
+
+        .text-primary {
+            color: var(--primary-red);
+        }
+
+        .border-primary {
+            border-color: var(--primary-red);
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--primary-red);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 60px rgba(147, 34, 51, 0.5);
+            border-left-width: 6px;
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .contact-info {
+            color: var(--primary-red);
+            background-color: rgba(147, 34, 51, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="assets/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="comm.html">Committees</a></li>
+                    <li><a href="assets/Brochure.pdf" target="_blank">Brochure</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="team.html">Teams</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+        <script src="script.js"></script>
+        <script>
+            var navLinks = document.getElementById("navLinks")
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </section>
+
+    <!-- Contact Cards -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- convener -->
+            <div class="contact-card rounded-xl shadow-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <div class="contact-icon flex-shrink-0">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Anita Shukla</h3>
+                        <p class="text-gray-600 mb-4 font-medium">Convenor</p>
+                        <div class="space-y-3">
+                            <div class="contact-info px-3 py-2 rounded-lg text-sm">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
+                                        </path>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                    </svg>
+                                    <span>camun.csi@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="contact-info px-3 py-2 rounded-lg text-sm">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                                        </path>
+                                    </svg>
+                                    <span>+91 9990696565</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  Secretary General -->
+            <div class="contact-card rounded-xl shadow-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <div class="contact-icon flex-shrink-0">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Parth Shukla</h3>
+                        <p class="text-gray-600 mb-4 font-medium">Secretary General</p>
+                        <div class="space-y-3">
+                            <div class="contact-info px-3 py-2 rounded-lg text-sm">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
+                                        </path>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                    </svg>
+                                    <span>literaturebyparth123@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="contact-info px-3 py-2 rounded-lg text-sm">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                                        </path>
+                                    </svg>
+                                    <span>+91 7505261621</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DSG -->
+            <div class="contact-card rounded-xl shadow-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <div class="contact-icon flex-shrink-0">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Nidhi Bansal</h3>
+                        <p class="text-gray-600 mb-4 font-medium">Deputy Secretary General</p>
+                        <div class="space-y-3">
+                            <div class="contact-info px-3 py-2 rounded-lg text-sm">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
+                                        </path>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                    </svg>
+                                    <span>csi.nidhibansal@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="contact-info px-3 py-2 rounded-lg text-sm">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                                        </path>
+                                    </svg>
+                                    <span>+91 9540496189</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DG -->
+            <div class="contact-card rounded-xl shadow-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <div class="contact-icon flex-shrink-0">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Ansh Jha</h3>
+                        <p class="text-gray-600 mb-4 font-medium">Director General</p>
+                        <div class="space-y-3">
+                            <div class="contact-info px-3 py-2 rounded-lg text-sm">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
+                                        </path>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                    </svg>
+                                    <span>anshhj.work@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="contact-info px-3 py-2 rounded-lg text-sm">
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                                        </path>
+                                    </svg>
+                                    <span>+91 95820 14779</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer">
+        <p id="footer"> <i>Designed By - Bhavik Goyal</i> </p>
+        <p id="extra">Copyright © 2025 CAMUN , Cambridge School Indirapuram | All rights reserved.</p>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="team.css">
+<title>Team</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="icon" type="image" href="favicon.ico">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-red: #932233;
+            --dark-red: #361f22;
+        }
+
+        .bg-primary {
+            background-color: var(--primary-red);
+        }
+
+        .bg-dark {
+            background-color: var(--dark-red);
+        }
+
+        .text-primary {
+            color: var(--primary-red);
+        }
+
+        .border-primary {
+            border-color: var(--primary-red);
+        }
+
+        .profile-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            transition: all 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(147, 34, 51, 0.5);
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        .position-badge {
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+        }
+
+        /* .core {
+                margin-top: 30px;
+                font-size: 30px;
+                font-weight: bold;
+            } */
+    </style>
+</head>
+
+<body class="bg-white min-h-screen">
+    <section style="margin-top: 20px;">
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="assets/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="comm.html">Committees</a></li>
+                        <li><a href="assets/Brochure.pdf" target="_blank">Brochure</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Meet Our Team</h1>
+            <!-- Header -->
+        </section>
+
+        <!-- Profile Cards Grid -->
+        <!-- <center><h1 class="core">Core Secretariat</h1></center> -->
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- convener -->
+                <div class="profile-card rounded-xl shadow-lg p-6 text-center">
+                    <div class="profile-image rounded-full mx-auto mb-6">
+                        <img src="assets/team/anita.png" class="team-img">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Anita Shukla</h3>
+                    <div
+                        class="position-badge text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                        Convener
+                    </div>
+                    <!-- <div class="border-t border-gray-200 pt-4">
+                        <div class="flex justify-center items-center text-gray-600">
+                            <svg class="w-4 h-4 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-sm">MUN Secretariat</span>
+                        </div>
+                    </div> -->
+                </div>
+
+                <!-- SG -->
+                <div class="profile-card rounded-xl shadow-lg p-6 text-center">
+                    <div class="profile-image rounded-full mx-auto mb-6">
+                        <img src="assets/team/parth.png" class="team-img">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Parth Shukla</h3>
+                    <div
+                        class="position-badge text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                        Secretary General
+                    </div>
+                    <!-- <div class="border-t border-gray-200 pt-4">
+                        <div class="flex justify-center items-center text-gray-600">
+                            <svg class="w-4 h-4 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-sm">MUN Secretariat</span>
+                        </div>
+                    </div> -->
+                </div>
+
+                <!-- DSG -->
+                <div class="profile-card rounded-xl shadow-lg p-6 text-center">
+                    <div class="profile-image rounded-full mx-auto mb-6">
+                        <img src="assets/team/nidhi.png" class="team-img">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Nidhi Bansal</h3>
+                    <div
+                        class="position-badge text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                        Deputy Secretary-General
+                    </div>
+                    <!-- <div class="border-t border-gray-200 pt-4">
+                    <div class="flex justify-center items-center text-gray-600">
+                        <svg class="w-4 h-4 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-sm">MUN Secretariat</span>
+                    </div>
+                </div> -->
+                </div>
+
+                <!-- DG -->
+                <div class="profile-card rounded-xl shadow-lg p-6 text-center">
+                    <div class="profile-image rounded-full mx-auto mb-6">
+                        <img src="assets/team/ansh.png" class="team-img">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Ansh Jha</h3>
+                    <div
+                        class="position-badge text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                        Director General
+                    </div>
+                    <!-- <div class="border-t border-gray-200 pt-4">
+                    <div class="flex justify-center items-center text-gray-600">
+                        <svg class="w-4 h-4 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-sm">MUN Secretariat</span>
+                    </div>
+                </div> -->
+                </div>
+
+                <!-- USG Media affairs -->
+                <div class="profile-card rounded-xl shadow-lg p-6 text-center">
+                    <div class="profile-image rounded-full mx-auto mb-6">
+                        <img src="assets/team/ayushmaan.png" class="team-img">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Ayushmaan Ghosh</h3>
+                    <div
+                        class="position-badge text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                        USG Media affairs
+                    </div>
+                    <!-- <div class="border-t border-gray-200 pt-4">
+                    <div class="flex justify-center items-center text-gray-600">
+                        <svg class="w-4 h-4 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-sm">MUN Secretariat</span>
+                    </div>
+                </div> -->
+                </div>
+
+                <!-- IT head -->
+                <div class="profile-card rounded-xl shadow-lg p-6 text-center">
+                    <div class="profile-image rounded-full mx-auto mb-6">
+                        <img src="assets/team/bhavik.png" class="team-img">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Bhavik Goyal</h3>
+                    <div
+                        class="position-badge text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                        IT Head
+                    </div>
+                    <!-- <div class="border-t border-gray-200 pt-4">
+                    <div class="flex justify-center items-center text-gray-600">
+                        <svg class="w-4 h-4 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-sm">MUN Secretariat</span>
+                    </div>
+                </div> -->
+                </div>
+
+                <!-- academics -->
+                <div class="profile-card rounded-xl shadow-lg p-6 text-center">
+                    <div class="profile-image rounded-full mx-auto mb-6">
+                        <img src="assets/team/vagisha.png" class="team-img">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Vagisha Singh</h3>
+                    <div
+                        class="position-badge text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                        USG Academics
+                    </div>
+                    <!-- <div class="border-t border-gray-200 pt-4">
+                    <div class="flex justify-center items-center text-gray-600">
+                        <svg class="w-4 h-4 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-sm">MUN Secretariat</span>
+                    </div>
+                </div> -->
+                </div>
+
+                <!-- academic-2 -->
+                <div class="profile-card rounded-xl shadow-lg p-6 text-center">
+                    <div class="profile-image rounded-full mx-auto mb-6">
+                        <img src="assets/team/aashni.png" class="team-img">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Aashni Jha</h3>
+                    <div
+                        class="position-badge text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                        USG Academics
+                    </div>
+                    <!-- <div class="border-t border-gray-200 pt-4">
+                    <div class="flex justify-center items-center text-gray-600">
+                        <svg class="w-4 h-4 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-sm">MUN Secretariat</span>
+                    </div>
+                </div> -->
+                </div>
+
+                <!-- Logistics -->
+                <div class="profile-card rounded-xl shadow-lg p-6 text-center">
+                    <div class="profile-image rounded-full mx-auto mb-6">
+                        <img src="assets/team/sneh.png" class="team-img">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Sneh Anand</h3>
+                    <div
+                        class="position-badge text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                        USG Logistics
+                    </div>
+                    <!-- <div class="border-t border-gray-200 pt-4">
+                    <div class="flex justify-center items-center text-gray-600">
+                        <svg class="w-4 h-4 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-sm">MUN Secretariat</span>
+                    </div>
+                </div> -->
+                </div>
+
+                <!-- Logistics-2 -->
+                <div class="profile-card rounded-xl shadow-lg p-6 text-center">
+                    <div class="profile-image rounded-full mx-auto mb-6">
+                        <img src="assets/team/kabeer.png" class="team-img">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Kabeer Dey</h3>
+                    <div
+                        class="position-badge text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                        USG Logistics
+                    </div>
+                    <!-- <div class="border-t border-gray-200 pt-4">
+                    <div class="flex justify-center items-center text-gray-600">
+                        <svg class="w-4 h-4 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-sm">MUN Secretariat</span>
+                    </div>
+                </div> -->
+                </div>
+
+                <!-- del affair -->
+                <div class="profile-card rounded-xl shadow-lg p-6 text-center">
+                    <div class="profile-image rounded-full mx-auto mb-6">
+                      <img src="assets/team/hardik.png" class="team-img">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Hardik Balooni</h3>
+                    <div
+                        class="position-badge text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                        USG Delegate Affairs
+                    </div>
+                    <!-- <div class="border-t border-gray-200 pt-4">
+                    <div class="flex justify-center items-center text-gray-600">
+                        <svg class="w-4 h-4 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-sm">MUN Secretariat</span>
+                    </div>
+                </div> -->
+                </div>
+
+                <!-- del affairs -2 -->
+                <div class="profile-card rounded-xl shadow-lg p-6 text-center">
+                    <div class="profile-image rounded-full mx-auto mb-6">
+                      <img src="assets/team/prisha.png" class="team-img">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Prisha Tiwari</h3>
+                    <div
+                        class="position-badge text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                        USG Delegate Affairs
+                    </div>
+                    <!-- <div class="border-t border-gray-200 pt-4">
+                    <div class="flex justify-center items-center text-gray-600">
+                        <svg class="w-4 h-4 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-sm">MUN Secretariat</span>
+                    </div>
+                </div> -->
+                </div>
+
+                <!-- committee aff -->
+                <div class="profile-card rounded-xl shadow-lg p-6 text-center">
+                    <div class="profile-image rounded-full mx-auto mb-6">
+                        <img src="assets/team/abhinav.png" class="team-img">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Abhinav Mukherjee</h3>
+                    <div
+                        class="position-badge text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                        USG Committee Affairs
+                    </div>
+                    <!-- <div class="border-t border-gray-200 pt-4">
+                    <div class="flex justify-center items-center text-gray-600">
+                        <svg class="w-4 h-4 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-sm">MUN Secretariat</span>
+                    </div>
+                </div> -->
+                </div>
+
+                <!-- committee affair -->
+                <div class="profile-card rounded-xl shadow-lg p-6 text-center">
+                    <div class="profile-image rounded-full mx-auto mb-6">
+                        <img src="assets/team/ananya.png" class="team-img">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Annanya Singh</h3>
+                    <div
+                        class="position-badge text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                        USG Committee Affairs
+                    </div>
+                    <!-- <div class="border-t border-gray-200 pt-4">
+                    <div class="flex justify-center items-center text-gray-600">
+                        <svg class="w-4 h-4 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-sm">MUN Secretariat</span>
+                    </div>
+                </div> -->
+                </div>
+
+                <!-- confrence -->
+                <div class="profile-card rounded-xl shadow-lg p-6 text-center">
+                    <div class="profile-image rounded-full mx-auto mb-6">
+                        <img src="assets/team/priyanshi.png" class="team-img">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Priyanshi Pandey</h3>
+                    <div
+                        class="position-badge text-white px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4">
+                        USG Conference Affairs
+                    </div>
+                    <!-- <div class="border-t border-gray-200 pt-4">
+                    <div class="flex justify-center items-center text-gray-600">
+                        <svg class="w-4 h-4 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span class="text-sm">MUN Secretariat</span>
+                    </div>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <section class="footer">
+        <p id="footer"> <i>Designed By - Bhavik Goyal</i> </p>
+        <p id="extra">Copyright © 2025 CAMUN , Cambridge School Indirapuram | All rights reserved.</p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

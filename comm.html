@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committees</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="comm.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="icon" type="image" href="favicon.ico">
+    <style>
+        :root {
+            --primary-red: #932233;
+            --dark-red: #361f22;
+        }
+
+        .bg-primary {
+            background-color: var(--primary-red);
+        }
+
+        .bg-dark {
+            background-color: var(--dark-red);
+        }
+
+        .text-primary {
+            color: var(--primary-red);
+        }
+
+        .border-primary {
+            border-color: var(--primary-red);
+        }
+
+        .committee-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--primary-red);
+        }
+
+        .committee-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 60px rgba(147, 34, 51, 0.5);
+            border-left-width: 6px;
+        }
+
+        .committee-icon {
+            width: 120px;
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            align-self: stretch;
+        }
+
+        .agenda-tag {
+            background-color: rgba(147, 34, 51, 0.1);
+            color: var(--primary-red);
+        }
+
+        .delegate-count {
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="assets/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="assets/Brochure.pdf" target="_blank">Brochure</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Committees</h1>
+        <script src="script.js"></script>
+        <script>
+            var navLinks = document.getElementById("navLinks")
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </section>
+
+    <!-- Committees Grid -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+            <!-- UNGA -->
+            <div class="committee-card rounded-xl shadow-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <img src="assets/comm/1.png" alt="Description of image" class="responsive-image"
+                        class="committee-icon ">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">United National General Assembly  </h3>
+                        <div class="space-y-2">
+                            <div class="agenda-tag px-3 py-2 rounded-lg text-sm font-medium">
+                                Advancement and Utilisation of Global Technologies to Combat Climate Change, with Special Emphasis on Glacier Conservation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AIPPM -->
+            <div class="committee-card rounded-xl shadow-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <img src="assets/comm/2.png" alt="Description of image" class="responsive-image"
+                        class="committee-icon ">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">All India Political Parties Meet</h3>
+                        <div class="space-y-2">
+                            <div class="agenda-tag px-3 py-2 rounded-lg text-sm font-medium">
+                                Deliberation upon Violations of the Fundamental Rights with Special Emphasis on the ‘Right to Freedom of Speech and Expression’
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNSC -->
+            <div class="committee-card rounded-xl shadow-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <img src="assets/comm/3.png" alt="Description of image" class="responsive-image"
+                        class="committee-icon ">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">United National Security Council</h3>
+                        <div class="space-y-2">
+                            <div class="agenda-tag px-3 py-2 rounded-lg text-sm font-medium">
+                                Deliberation upon the Prevention
+ of Interventions by External Aggressors in Conflicts Undermining Sovereignty
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNW -->
+            <div class="committee-card rounded-xl shadow-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <img src="assets/comm/4.png" alt="Description of image" class="responsive-image"
+                        class="committee-icon ">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">United Nations Women</h3>
+                        <div class="space-y-2">
+                            <div class="agenda-tag px-3 py-2 rounded-lg text-sm font-medium">
+                                 Combating Gender-Based  Violence in the Digital Age
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IP -->
+            <div class="committee-card rounded-xl shadow-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <img src="assets/comm/5.png" alt="Description of image" class="responsive-image"
+                        class="committee-icon ">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">International Press</h3>
+                        <div class="space-y-2">
+                            <div class="agenda-tag px-3 py-2 rounded-lg text-sm font-medium">
+                                Journalists, Photographers, and Caricaturists
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IPL -->
+            <div class="committee-card rounded-xl shadow-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <img src="assets/comm/6.png" alt="Description of image" class="responsive-image"
+                        class="committee-icon ">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Indian Premier League</h3>
+                        <div class="space-y-2">
+                            <div class="agenda-tag px-3 py-2 rounded-lg text-sm font-medium">
+                               IPL 2025 
+Mega Auction
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MARVEL -->
+            <div class="committee-card rounded-xl shadow-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <img src="assets/comm/7.png" alt="Description of image" class="responsive-image"
+                        class="committee-icon ">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">MARVEL</h3>
+                        <div class="space-y-2">
+                            <div class="agenda-tag px-3 py-2 rounded-lg text-sm font-medium">
+                                Classified
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ECOSOC -->
+            <div class="committee-card rounded-xl shadow-lg p-6">
+                <div class="flex items-start space-x-4">
+                    <img src="assets/comm/8.png" alt="Description of image" class="responsive-image"
+                        class="committee-icon ">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Economic and Social Council</h3>
+                        <div class="space-y-2">
+                            <div class="agenda-tag px-3 py-2 rounded-lg text-sm font-medium">
+                               Reviewing the recent changes in the maritime trade war in the South China sea region with special emphasis on BIMSTEC.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <section class="footer">
+        <p id="footer"> <i>Designed By - Bhavik Goyal</i> </p>
+        <p id="extra">Copyright © 2025 CAMUN , Cambridge School Indirapuram | All rights reserved.</p>
+    </section>
+</body>
+
+</html>
