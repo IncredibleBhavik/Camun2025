@@ -139,7 +139,7 @@
      }
      .nav-links {
          position: fixed;
-         background: #452c63         ;
+         background: #361f22       ;
          height: 100vh;
          width: 200px;
          top: 0;
@@ -292,4 +292,5 @@
     background-color:   linear-gradient(90deg, #932233, #361f22);
     height: auto;
     width: 250px;
+
 } */
