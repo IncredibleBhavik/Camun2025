@@ -35,7 +35,7 @@ h2 {
     width: 100%;
     max-width: 600px;
     transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 4px 4px 4px 4px #452c63;
+    box-shadow: 4px 4px 4px 4px  #5c121dfc;
 }
 
 .member-img {
@@ -69,7 +69,7 @@ h2 {
 
 .team-member:hover {
     transform: translateY(-5px);
-    box-shadow: 4px 4px 4px 4px #452c63;
+    box-shadow: 4px 4px 4px 4px #5c121dfc;
 }
 
 .team-member:hover .member-img {
@@ -232,7 +232,7 @@ h2 {
      }
      .nav-links {
          position: fixed;
-         background:  #5c121dfc;
+         background: #5c121dfc;
          height: 100vh;
          width: 200px;
          top: 0;
@@ -299,5 +299,6 @@ h2 {
     background: linear-gradient(transparent,#FFBD59);
 
 }
+
 
 
