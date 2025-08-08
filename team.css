@@ -232,7 +232,7 @@ h2 {
      }
      .nav-links {
          position: fixed;
-         background: #452c63;
+         background:  #5c121dfc;
          height: 100vh;
          width: 200px;
          top: 0;
@@ -299,4 +299,5 @@ h2 {
     background: linear-gradient(transparent,#FFBD59);
 
 }
+
 
