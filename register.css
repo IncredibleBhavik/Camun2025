@@ -142,7 +142,7 @@
      }
      .nav-links {
          position: fixed;
-         background: #452c63;
+         background:  #5c121dfc;
          height: 100vh;
          width: 200px;
          top: 0;
@@ -320,3 +320,4 @@
     background: linear-gradient(transparent,#5c121dfc);
     border-radius: 5px;
 }
+
